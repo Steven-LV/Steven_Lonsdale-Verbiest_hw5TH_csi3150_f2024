@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Very Real Cars</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/index.js" defer></script>
+    <script src="./js/carData.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Steven's Very Real Cars</h1>
+    </header>
+
+    <div id="mainContainer">
+        <aside id="filters">
+            <h2>Filter Options</h2>
+            <form id="filterForm">
+                <div>
+                    <label for="minYear">Min Year:</label>
+                    <input type="number" id="minYear" name="minYear" placeholder="e.g., 2005">
+                </div>
+                <div>
+                    <label for="maxYear">Max Year:</label>
+                    <input type="number" id="maxYear" name="maxYear" placeholder="e.g., 2012">
+                </div>
+                <div>
+                    <h3>Make</h3>
+                    <div id="makeCheckboxes">
+                    </div>
+                </div>
+                <div>
+                    <label for="maxMileage">Max Mileage:</label>
+                    <input type="number" id="maxMileage" name="maxMileage" placeholder="e.g., 30000">
+                </div>
+                <div>
+                    <label for="minPrice">Min Price:</label>
+                    <input type="number" id="minPrice" name="minPrice" placeholder="e.g., 5000">
+                </div>
+                <div>
+                    <label for="maxPrice">Max Price:</label>
+                    <input type="number" id="maxPrice" name="maxPrice" placeholder="e.g., 25000">
+                </div>
+                <div>
+                    <h3>Colors</h3>
+                    <div id="colorCheckboxes">
+                    </div>
+                </div>
+                <button type="button" id="applyFilters">Apply Filters</button>
+            </form>
+        </aside>
+
+        <section id="carListings">
+            <h2>Available Cars</h2>
+            <div id="carCards">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
